@@ -18,3 +18,9 @@ char* my_strncpy (char* destination , const char* source , size_t num);
 
 //Concatenation:
 char* my_strcat (char* destination , const char* source);
+char* my_strncat (char* destination , const char* source , size_t num);
+
+//Comparison:
+int my_memcmp(const void* ptr1,const void* ptr2, size_t num);
+int my_strcmp(const char* str1,const char* str2);
+

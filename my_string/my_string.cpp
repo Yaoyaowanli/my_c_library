@@ -65,6 +65,56 @@ char* my_strncpy (char* destination , const char* source , size_t num){
 }
 
 char* my_strcat (char* destination , const char* source){
+	assert(destination != NULL && source != NULL);
+	char* ret = destination;
+	while(*destination != '\0'){
+		++destination;
+	}
+	while((*destination++ = *source++)){
+		;
+	}
+	return ret;
+}
 
+
+char* my_strncat(char* destination,const char* source,size_t num){
+	assert(destination != NULL && source != NULL);
+	//将source中num个字符追加到dest后（包括\0），如果source小于num，则只到\0部分
+	char* ret = destination;
+	while (*destination != '\0'){
+		++destination;
+	}
+	while ((*destination++ = *source++) && num){
+		num--;
+	}
+	*destination = '\0';
+	return ret;
+}
+
+int my_memcmp(const void* ptr1,const void* ptr2,size_t num){
+	assert(ptr1 != NULL && ptr2 != NULL);
+	//ptr1 和 ptr2 比较，相同返回0，第一处不同位置如果ptr1 < ptr2 返回<0，反之返回>0
+	const unsigned char* p1 = (const unsigned char*)ptr1;
+	const unsigned char* p2 = (const unsigned char*)ptr2;
+	while (num--){
+		if (*p1 != *p2){
+			return *p1 - *p2;
+		}
+		p1++;
+		p2++;
+	}
+	return 0;
+}
+
+int my_strcmp(const char* str1,const char* str2){
+	assert(str1 != NULL && str2 != NULL);
+	while (*str1 == *str2){
+		if (!(*str1)){
+			return 0;
+		}
+		str1++;
+		str2++;
+	}
+	return *str1 - *str2;
 }
 
