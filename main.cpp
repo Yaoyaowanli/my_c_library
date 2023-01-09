@@ -3,14 +3,13 @@
 //
 
 #include <iostream>
-#include "my_string.h"
+//#include "my_string.h"
 #include <cstdio>
 #include <cstring>
+#include <cstdlib>
 
 int main (){
-	char str[] = {'a','b','c'};
-	char str2[] = {'a','b'};
-	printf("%d\n",my_strcmp(str,str2));
-
+	char* str = getenv("LANG");
+	printf("%s\n",str);
     	return 0;
 }
