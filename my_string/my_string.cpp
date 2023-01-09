@@ -118,3 +118,40 @@ int my_strcmp(const char* str1,const char* str2){
 	return *str1 - *str2;
 }
 
+int my_strncmp(const char* str1,const char* str2,size_t num){
+	assert(str1 != NULL && str2 != NULL);
+	while (num--){
+		
+		if(*str1=='\0' || *str1 != *str2){
+			return *str1 - *str2;
+		}
+		str1++;
+		str2++;
+	}
+	return 0;
+}
+
+void* my_memchr(void* ptr,int value,size_t num){
+	assert(ptr != NULL);
+	char* ps = (char*)ptr;
+	while (num--){
+		if (*ps == value){
+			return (void*)ps;
+		}
+		ps++;
+	}
+	return NULL;
+}
+
+char* my_strchr(char* str,int character){
+	assert(str != NULL);
+	while (*str && *str != character){
+		++str;
+	}
+	if (*str == (char)character){
+		return str;
+	}
+	return NULL;
+}
+
+
