@@ -30,7 +30,11 @@ int my_strncmp(const char* str1,const char* str2,size_t num);
 
 //Searching:
 void* my_memchr(void* ptr,int value,size_t num);
-
+char* my_strchr(char* str, int character);
+const char* my_strchr(const char* str,int character);
+size_t my_strcspn(const char* str1,const char* str2);
+char* my_strpbrk(char* str1,const char* str2);
+char* my_strrchr(char* str,int character);
 
 
 

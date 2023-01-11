@@ -154,4 +154,50 @@ char* my_strchr(char* str,int character){
 	return NULL;
 }
 
+const char* my_strchr(const char* str,int character){
+ 	assert(str != NULL);
+        while (*str && *str != character){
+                ++str;
+        }
+        if (*str == (char)character){
+                return str;
+        }
+        return NULL;
+}
+
+size_t my_strcspn(const char* str1,const char* str2){
+	assert(str1 != NULL && str2 != NULL);
+	size_t count = 0;
+	//遍历str1去str2中找
+	while ( my_strchr(str2,*str1) == NULL){
+		++str1;
+		++count;
+	}
+	return count;
+}
+
+char* my_strpbrk(char* str1,const char* str2){
+	assert(str1 != NULL && str2 != NULL);
+	char* ret = NULL;
+	while ( (ret = my_strchr(const_cast<char*>(str2),*str1)) == NULL && *str1){
+		++str1;
+	}
+	return ret;
+}
+
+char* my_strrchr(char* str,int character){
+	assert(str != NULL);
+	char* start = str;
+	while (*str != '\0'){
+		++str;
+	}
+	//str 找到末尾
+	while (str != start && *str != character){
+		--str;
+	}
+	if (*str == character){
+		return str;
+	}
+	return NULL;
+}
 

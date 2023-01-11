@@ -26,9 +26,31 @@ void test_strxfrm(){
 	printf("dest[%s] , len:%ld \n",(char*)dest,len);
 }
 
+void test_strcspn(){
+	char str[] = "hello";
+        char str2[] = "x";
+        printf("%ld\n",my_strcspn(str,str2));
+}
+
+void test_my_strpbrk(){
+	char str[] = "hello";
+	char str2[] = "o";
+	printf("%c\n",*strpbrk(str,str2));
+	printf("%c\n",*my_strpbrk(str,str2));
+}
+
+void test_my_strrchr(){
+	char str[] = "hello yaoyuan";
+	printf("%s\n",strrchr(str,' '));
+	printf("%s\n",my_strrchr(str,' '));
+}
+
 int main (){
 	//test_my_strncmp();
-	test_strxfrm();
+	//test_strxfrm();
+	//test_strcspn();
+	//test_my_strpbrk();
+	test_my_strrchr();
 
     	return 0;
 }
