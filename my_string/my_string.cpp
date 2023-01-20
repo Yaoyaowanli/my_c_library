@@ -201,3 +201,37 @@ char* my_strrchr(char* str,int character){
 	return NULL;
 }
 
+size_t my_strspn(const char* str1,const char* str2){
+	assert(str1 != NULL && str2 != NULL);
+	const char* source_str = NULL;
+	const char* obj_str = NULL;
+	size_t count = 0;
+	for (source_str = str1; *source_str != '\0'; ++source_str){
+		for(obj_str = str2; *obj_str != '\0'; ++obj_str){
+			if(*source_str == *obj_str){
+				++count;
+				break;
+			}
+		}
+		if(*obj_str == '\0'){
+			break;
+		}
+	}
+	return count;
+}
+
+const char* my_strstr(const char* str , const char* substr){
+	assert(str != NULL && substr != NULL);
+	const char* obj = NULL;
+	for (obj = str;*obj != '\0';obj++){
+		const char* sub = substr;
+		const char* tmp_obj = obj;
+		while(*sub && *sub++ == *tmp_obj++){
+			;
+		}
+		if (*sub == '\0'){
+			return obj;
+		}
+	}
+	return NULL;
+}

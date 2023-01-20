@@ -35,6 +35,8 @@ const char* my_strchr(const char* str,int character);
 size_t my_strcspn(const char* str1,const char* str2);
 char* my_strpbrk(char* str1,const char* str2);
 char* my_strrchr(char* str,int character);
+size_t my_strspn(const char* str1,const char* str2);
+const char* my_strstr(const char* str1,const char* str2);
 
 
 

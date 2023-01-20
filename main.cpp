@@ -45,12 +45,28 @@ void test_my_strrchr(){
 	printf("%s\n",my_strrchr(str,' '));
 }
 
+void test_my_strspn(){
+	char str1[] = "destination";
+	char str2[] = "dest";
+	printf("strspn: %ld\n",strspn(str1,str2));
+	printf("my_strspn: %ld\n",my_strspn(str1,str2));
+}
+
+void test_my_strstr(){
+	char str1[] = "abcdefabcdef";
+	char str2[] = "c";
+	printf("strstr: %s\n",strstr(str1,str2));
+	printf("my_strstr: %s\n",my_strstr(str1,str2));
+}
+
 int main (){
 	//test_my_strncmp();
 	//test_strxfrm();
 	//test_strcspn();
 	//test_my_strpbrk();
-	test_my_strrchr();
+	//test_my_strrchr();
+	//test_my_strspn();
+	test_my_strstr();
 
     	return 0;
 }

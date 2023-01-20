@@ -4,9 +4,10 @@
 
 int main (){
 
-	char str[] = "hello";
-	char str2[] = "ho";
-	printf("%d\n",strcspn(str,str2));
+        char str[] = "hello";
+        char str2[] = "heo";
+        //strspn  返回str1中与str相同部分的最后下标
+        printf("%ld\n",strspn(str,str2));
 
-	return 0;
-}
+        return 0;
+}       
