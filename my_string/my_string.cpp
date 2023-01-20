@@ -226,8 +226,9 @@ const char* my_strstr(const char* str , const char* substr){
 	for (obj = str;*obj != '\0';obj++){
 		const char* sub = substr;
 		const char* tmp_obj = obj;
-		while(*sub && *sub++ == *tmp_obj++){
-			;
+		while(*sub && *sub == *tmp_obj){
+			sub++;
+			tmp_obj++;
 		}
 		if (*sub == '\0'){
 			return obj;
@@ -235,3 +236,22 @@ const char* my_strstr(const char* str , const char* substr){
 	}
 	return NULL;
 }
+
+void* my_memset(void* ptr,int value,size_t num){
+	assert(ptr != NULL);
+	unsigned char* p = (unsigned char*)ptr;
+	while (num--){
+		*p++ = value;
+	}
+	return ptr;
+}
+
+size_t my_strlen(const char* str){
+	assert(str != NULL);
+	size_t count = 0;
+	while (*str++ != '\0'){
+		count++;
+	}
+	return count;
+}
+

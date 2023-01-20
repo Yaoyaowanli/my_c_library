@@ -38,7 +38,9 @@ char* my_strrchr(char* str,int character);
 size_t my_strspn(const char* str1,const char* str2);
 const char* my_strstr(const char* str1,const char* str2);
 
-
+//other：
+void* my_memset(void* ptr,int value,size_t num);
+size_t my_strlen(const char* str);
 
 
 
