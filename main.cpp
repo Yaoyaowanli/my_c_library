@@ -8,6 +8,7 @@
 #include <cstring>
 #include <cstdlib>
 #include "test_my_string.h"
+#include "test_stdlib.h"
 
 int main (){
 	//test_my_strncmp();
@@ -20,7 +21,19 @@ int main (){
 	//test_my_strtok();
 	//test_my_memset();
 	//test_strerror();
-	test_my_strlen();
+	//test_my_strlen();
+	//test_atof();
+	//test_atoi();
+	//test_atol();
+	//test_strtod();
+	//test_rand();
+	//test_calloc();
+	//test_malloc();
+	//test_abort();
+	//test_atexit();
+	//test_quick_exit();
+	//test_getenv();
+	test_system();
 
     	return 0;
 }
