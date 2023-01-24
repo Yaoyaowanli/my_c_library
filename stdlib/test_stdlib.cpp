@@ -189,6 +189,7 @@ void swap(void* p1,void* p2, size_t size){
 	}
 }
 
+
 int partSort(void* base,size_t left,size_t right,size_t size, int (*compar)(const void* , const void*)){
 	//base 是待排数组指针，left，right是单次排序的左右下标，size是元素大小
 	//因为要使用char*按照字节比较所以需要size
@@ -228,7 +229,7 @@ void my_qsort(void* base,size_t num,size_t size, int (*compar)(const void* , con
 }
 
 void test_my_qsort(){
-	int arr[] = {23,15,26,21,74,33,7889,75,38,978,90,75,10,6,2,70};
+	int arr[] = {6,1,2,7,9,3,4,8,10,5};
 	my_qsort(arr,sizeof(arr)/sizeof(arr[0]),sizeof(arr[0]),compar_int);
 	for (int i=0;i<sizeof(arr)/sizeof(arr[0]);i++){
 		printf("%d ",arr[i]);
@@ -236,3 +237,16 @@ void test_my_qsort(){
 	printf("\n");
 
 }
+
+void test_abs(){
+	int n = -99;
+	printf("%d\n",abs(n));
+}
+
+void test_div(){
+	div_t ret = div(10,3);
+	printf("10/3 商:%d\n",ret.quot);
+	printf("10/3 余:%d\n",ret.rem); 
+}
+
+//剩余函数多是abs和div的long int/long long int 版,省略...

@@ -20,3 +20,5 @@ int compar_int(const void* pmid,const void* key);
 void test_my_bsearch();
 void my_qsort(void* base,size_t num,size_t size, int (*compar)(const void* , const void*));
 void test_my_qsort();
+void test_abs();
+void test_div();

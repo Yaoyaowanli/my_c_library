@@ -35,7 +35,9 @@ int main (){
 	//test_getenv();
 	//test_system();
 	//test_my_bsearch();
-	test_my_qsort();
+	//test_my_qsort();
+	//test_abs();
+	test_div();
 
     	return 0;
 }
