@@ -9,4 +9,4 @@ main:
 link:
 	g++ main.o my_string.o test_my_string.o test_stdlib.o 
 a:
-	g++ main.cpp my_string/my_string.cpp my_string/test_my_string.cpp stdlib/test_stdlib.cpp -I my_string/ -I stdlib/ -o myCLib.out 
+	g++ main.cpp my_string/my_string.cpp my_string/test_my_string.cpp stdlib/test_stdlib.cpp ctype/test_ctype.cpp -I my_string/ -I stdlib/ -I ctype/ -o myclib.out 

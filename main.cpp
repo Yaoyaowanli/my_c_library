@@ -9,6 +9,7 @@
 #include <cstdlib>
 #include "test_my_string.h"
 #include "test_stdlib.h"
+#include "test_ctype.h"
 
 int main (){
 	//test_my_strncmp();
@@ -37,8 +38,9 @@ int main (){
 	//test_my_bsearch();
 	//test_my_qsort();
 	//test_abs();
-	test_div();
-
+	//test_div();
+	test_isalnum();
+	
     	return 0;
 }
 
