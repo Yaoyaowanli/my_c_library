@@ -39,8 +39,10 @@ int main (){
 	//test_my_qsort();
 	//test_abs();
 	//test_div();
-	test_isalnum();
-	
+	//test_isalnum();
+	//test_isalpha();
+	test_isblank();
+
     	return 0;
 }
 
