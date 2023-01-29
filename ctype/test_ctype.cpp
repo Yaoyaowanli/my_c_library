@@ -43,3 +43,36 @@ void test_isblank(){
 	}
 	
 }
+
+void test_iscntrl(){
+	//iscntrl 检查字符c是否是控制字符，控制字符：%d %c %s %ld
+	char arr[] = "~hello!\n";
+	for(int i=0;i<strlen(arr);i++){
+		printf("第%d个字符为：%c , 该字符是否是控制字符：%d\n",i+1,arr[i],iscntrl(arr[i]));
+	}
+}
+
+void test_isdigit(){
+	//isdigit 检查字符是否是十进制数字
+	char str[] = "12345hello\n";
+	int i = 0;
+	while(str[i]){
+		printf("字符串第\t%d\t个字符是否为十进制数字:%d\n",i+1,isdigit(str[i]));
+		i++;
+	}
+}
+
+void test_islower(){
+	//islower 检测字符是否为小写字母
+	char str[] = "HellO";
+	int i = 0;
+	printf("字符串：%s\n",str);
+	while (str[i]){
+		if(islower(str[i])){
+			printf("第%d个字符是小写字母\n",i+1);
+		}else{
+			printf("第%d个字符不是小写字母\n",i+1);
+				}
+		i++;
+	}
+}

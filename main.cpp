@@ -41,7 +41,10 @@ int main (){
 	//test_div();
 	//test_isalnum();
 	//test_isalpha();
-	test_isblank();
+	//test_isblank();
+	//test_iscntrl();
+	//test_isdigit();
+	test_islower();
 
     	return 0;
 }
