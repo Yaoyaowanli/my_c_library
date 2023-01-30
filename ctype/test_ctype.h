@@ -10,3 +10,4 @@ void test_isblank();
 void test_iscntrl();
 void test_isdigit();
 void test_islower();
+void test_isprint();

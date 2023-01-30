@@ -44,7 +44,8 @@ int main (){
 	//test_isblank();
 	//test_iscntrl();
 	//test_isdigit();
-	test_islower();
+	//test_islower();
+	test_isprint();
 
     	return 0;
 }

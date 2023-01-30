@@ -76,3 +76,12 @@ void test_islower(){
 		i++;
 	}
 }
+
+void test_isprint(){
+	//isprint 检查字符是否是可打印的字符
+	char str[] = "hello world~\n";
+	printf("字符串:%s\n",str);
+	for (int i=0;i<strlen(str);i++){
+		printf("第%d个字符:\t%c\t,是否为可打印字符:%d\n",i+1,str[i],isprint(str[i]));
+	}
+}
