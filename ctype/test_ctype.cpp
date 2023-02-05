@@ -85,3 +85,5 @@ void test_isprint(){
 		printf("第%d个字符:\t%c\t,是否为可打印字符:%d\n",i+1,str[i],isprint(str[i]));
 	}
 }
+
+void test_
