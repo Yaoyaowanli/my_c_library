@@ -86,4 +86,62 @@ void test_isprint(){
 	}
 }
 
-void test_
+void test_ispunct(){
+	//int ispunct(int c); 检查字符c是否是标点符号
+	char str[] = "hello,world!";
+	printf("str: %s\n",str);
+	for(int i=0;i<strlen(str);i++){
+		printf("%c是标点符号吗：%d\n",str[i],ispunct(str[i]));
+	}
+}
+
+void test_isspace(){
+	//int isspace（int c）检查字符c是否为空白符
+	char str[] = "hello world\t!\n";
+	printf("%s",str);
+	int len = strlen(str);
+	int n = 0;
+	while(n != len){
+		printf("str[n]: %c 是否是空白符：%d\n",str[n],isspace(str[n++]));
+	}
+}
+
+void test_isupper(){
+	// int isupper(int c) 检查字符是否是大写字母
+	char str[] = "Hello\tWorld !";
+	printf("str:%s\n",str);
+	for (int i=0; i<strlen(str);i++){
+		printf("srt[i]:%c 是否是大写字母：%d\n",str[i],isupper(str[i]));
+	}
+}
+
+void test_isxdigit(){
+	//int isxdigit(int c) 检测字符c是否是16进制数字
+	//char str[] = {char('0xa'),'h','e','l','l','o',char('oxc'),'\n'};
+	//printf("%s\n",str);
+	//for(int i=0;i<strlen(str);i++){
+	//	printf("str[i]:%c 是否是16进制数字:%d\n",str[i],isxdigit(str[i]));
+	//}
+}
+
+//转换字母大小写函数：
+
+void test_tolower(){
+	//int tolower(int c) 将字母c转换为小写，如果无法转换则返回原字符
+	char str[] = "HELLO World !";
+	printf("str: %s\n",str);
+	for(int i=0;i<strlen(str);i++){
+		str[i] = tolower(str[i]);
+	}
+	printf("tolower str: %s\n",str);
+}
+
+void test_toupper(){
+	// int toupper( int c ) 转换为大写
+	 char str[] = "HELLO world !";
+        printf("str: %s\n",str);
+        for(int i=0;i<strlen(str);i++){
+                str[i] = toupper(str[i]);
+        }
+        printf("toupper str: %s\n",str);
+}

@@ -45,7 +45,13 @@ int main (){
 	//test_iscntrl();
 	//test_isdigit();
 	//test_islower();
-	test_isprint();
+	//test_isprint();
+	//test_ispunct();
+	//test_isspace();
+	//test_isupper();
+	//test_isxdigit();
+	//test_tolower();
+	test_toupper();
 
     	return 0;
 }
