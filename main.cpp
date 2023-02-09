@@ -12,6 +12,7 @@
 #include "test_ctype.h"
 #include "test_errno.h"
 #include "test_math.h"
+#include "test_setjmp.h"
 
 int main (){
 	//test_my_strncmp();
@@ -57,7 +58,9 @@ int main (){
 	//test_errno_fopen();
 	//test_errno_fopen2();
 	//test_cos();
-    	test_exp();
+    	//test_exp();
+	//test_setjmp();
+	test_setjmp2();
 
 	return 0;
 }
