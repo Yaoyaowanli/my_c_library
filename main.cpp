@@ -11,6 +11,7 @@
 #include "test_stdlib.h"
 #include "test_ctype.h"
 #include "test_errno.h"
+#include "test_math.h"
 
 int main (){
 	//test_my_strncmp();
@@ -54,9 +55,11 @@ int main (){
 	//test_tolower();
 	//test_toupper();
 	//test_errno_fopen();
-	test_errno_fopen2();
+	//test_errno_fopen2();
+	//test_cos();
+    	test_exp();
 
-    	return 0;
+	return 0;
 }
 
 
