@@ -13,6 +13,7 @@
 #include "test_errno.h"
 #include "test_math.h"
 #include "test_setjmp.h"
+#include "test_signal.h"
 
 int main (){
 	//test_my_strncmp();
@@ -60,7 +61,8 @@ int main (){
 	//test_cos();
     	//test_exp();
 	//test_setjmp();
-	test_setjmp2();
+	//test_setjmp2();
+	test_signal();
 
 	return 0;
 }
