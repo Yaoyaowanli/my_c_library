@@ -14,6 +14,7 @@
 #include "test_math.h"
 #include "test_setjmp.h"
 #include "test_signal.h"
+#include "test_stdarg.h"
 
 int main (){
 	//test_my_strncmp();
@@ -62,7 +63,8 @@ int main (){
     	//test_exp();
 	//test_setjmp();
 	//test_setjmp2();
-	test_signal();
+	//test_signal();
+	test_stdarg();
 
 	return 0;
 }
