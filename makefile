@@ -9,4 +9,4 @@ main:
 link:
 	g++ main.o my_string.o test_my_string.o test_stdlib.o 
 a:
-	g++ main.cpp my_string/my_string.cpp my_string/test_my_string.cpp stdlib/test_stdlib.cpp ctype/test_ctype.cpp errno/test_errno.cpp math/test_math.cpp setjmp/test_setjmp.cpp signal/test_signal.cpp stdarg/test_stdarg.cpp stdbool/test_stdbool.cpp -I my_string/ -I stdlib/ -I ctype/ -I errno/ -I limits/ -I math/ -I setjmp/ -I signal/ -I stdarg/ -I stdbool/ -o myclib.out 
+	g++ main.cpp my_string/my_string.cpp my_string/test_my_string.cpp stdlib/test_stdlib.cpp ctype/test_ctype.cpp errno/test_errno.cpp math/test_math.cpp setjmp/test_setjmp.cpp signal/test_signal.cpp stdarg/test_stdarg.cpp stdbool/test_stdbool.cpp stddef/test_stddef.cpp -I my_string/ -I stdlib/ -I ctype/ -I errno/ -I limits/ -I math/ -I setjmp/ -I signal/ -I stdarg/ -I stdbool/ -I stddef/ -o myclib.out 

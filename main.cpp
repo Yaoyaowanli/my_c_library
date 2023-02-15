@@ -16,6 +16,7 @@
 #include "test_signal.h"
 #include "test_stdarg.h"
 #include "test_stdbool.h"
+#include "test_stddef.h"
 
 int main (){
 	//test_my_strncmp();
@@ -66,7 +67,10 @@ int main (){
 	//test_setjmp2();
 	//test_signal();
 	//test_stdarg();
-	test_stdbool();
+	//test_stdbool();
+	//test_ptrdiff_t();
+	//void test_max_align_t();
+	test_offsetof();
 
 	return 0;
 }
