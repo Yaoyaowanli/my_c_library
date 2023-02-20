@@ -17,6 +17,7 @@
 #include "test_stdarg.h"
 #include "test_stdbool.h"
 #include "test_stddef.h"
+#include "test_ios_base.h"
 
 int main (){
 	//test_my_strncmp();
@@ -70,7 +71,8 @@ int main (){
 	//test_stdbool();
 	//test_ptrdiff_t();
 	//void test_max_align_t();
-	test_offsetof();
+	//test_offsetof();
+    test_ios_base1();
 
 	return 0;
 }
