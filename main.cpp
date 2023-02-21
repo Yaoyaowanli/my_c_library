@@ -72,8 +72,12 @@ int main (){
 	//test_ptrdiff_t();
 	//void test_max_align_t();
 	//test_offsetof();
-    test_ios_base1();
-
+    	//test_ios_base1();
+	//test_ios_base_2();
+	//test_ios_base_3();
+	//test_ios_base_4();
+	test_ios_base_5();
+	
 	return 0;
 }
 

@@ -18,6 +18,9 @@
 //	字段format flags  成员函数：flags、setf、unsetf。 描述:设置了一组内部标识，解释某些输入输出操作
 
 void test_ios_base1();
-
+void test_ios_base_2();
+void test_ios_base_3();
+void test_ios_base_4();
+void test_ios_base_5();
 
 #endif //TEST_IOS_BASE_H
