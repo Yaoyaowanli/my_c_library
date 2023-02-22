@@ -18,6 +18,7 @@
 #include "test_stdbool.h"
 #include "test_stddef.h"
 #include "test_ios_base.h"
+#include "test_array.h"
 
 int main (){
 	//test_my_strncmp();
@@ -76,7 +77,9 @@ int main (){
 	//test_ios_base_2();
 	//test_ios_base_3();
 	//test_ios_base_4();
-	test_ios_base_5();
+	//test_ios_base_5();
+	//test_array_1();
+	test_array_2();
 	
 	return 0;
 }
